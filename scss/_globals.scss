@@ -20,11 +20,10 @@ body {
 
 a, a:visited, a:hover {
     text-decoration: none;
+    cursor: pointer;
     color: inherit;
 }
 
-h1 {
-}
 
 img {
     max-width: 100%;
@@ -36,6 +35,11 @@ button {
     border: none;
     background: linear-gradient(to right, $cyan, $blue);
     color: $white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 70%;
+    }
 }
 
 

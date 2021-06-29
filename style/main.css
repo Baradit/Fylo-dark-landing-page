@@ -21,6 +21,7 @@ body {
 
 a, a:visited, a:hover {
   text-decoration: none;
+  cursor: pointer;
   color: inherit;
 }
 
@@ -35,6 +36,11 @@ button {
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
   background: linear-gradient(to right, #65e2d9, #339ecc);
   color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 70%;
 }
 
 .attribution {
@@ -70,9 +76,31 @@ button {
   padding-left: 1rem;
 }
 
+.header__menu a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .hero {
+  position: relative;
+  z-index: 1;
   background-color: #1c2431;
   padding: 0 2.25rem;
+  background-image: url(/images/bg-curvy-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12.7rem;
+  left: 0;
+  background-color: #181f2a;
+  bottom: 0;
 }
 
 .hero__img {
@@ -95,10 +123,19 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
-.hero__text button {
+.hero__text .hero__cta {
+  background-color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+
+.hero__text .hero__cta button {
   font-size: inherit;
   padding: 1rem 5.5rem;
-  border-radius: 2rem;
+  border-radius: inherit;
 }
 
 .main {
@@ -185,6 +222,16 @@ button {
   padding-right: 0.4rem;
 }
 
+.main .productive__text-cta:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.main .productive__text-cta:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
 .main .testimonials {
   position: relative;
   z-index: 1;
@@ -252,6 +299,8 @@ button {
 }
 
 .main .signUp {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: absolute;
   padding: 0 1rem;
   text-align: center;
@@ -318,6 +367,15 @@ button {
 
 .main .signUp__bottom input {
   text-indent: 2rem;
+}
+
+.main .signUp__bottom .signUp__cta {
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.main .signUp__bottom .signUp__cta button {
+  width: 100%;
 }
 
 .footer {

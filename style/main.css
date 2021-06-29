@@ -102,6 +102,7 @@ button {
 }
 
 .main {
+  position: relative;
   padding-top: 8rem;
   background-color: #181f2a;
 }
@@ -188,7 +189,7 @@ button {
   position: relative;
   z-index: 1;
   padding: 0 2.8rem;
-  padding-bottom: 14.5rem;
+  padding-bottom: 21rem;
 }
 
 .main .testimonials > *:not(:last-child) {
@@ -251,11 +252,14 @@ button {
 }
 
 .main .signUp {
+  position: absolute;
   padding: 0 1rem;
   text-align: center;
+  bottom: -11rem;
 }
 
 .main .signUp__container {
+  border-radius: 0.6rem;
   background: #1c2431;
   padding: 0 1.8rem;
   padding-bottom: 2.25rem;
@@ -318,5 +322,87 @@ button {
 
 .footer {
   background-color: #0b1523;
+  padding: 0 1.5rem;
+  padding-top: 15rem;
+  padding-bottom: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__logo {
+  padding-left: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 1rem;
+}
+
+.footer__item > * {
+  padding-bottom: 1rem;
+}
+
+.footer__item-icon {
+  padding-top: 0.2rem;
+  -ms-flex-preferred-size: 13%;
+      flex-basis: 13%;
+}
+
+.footer__item-desc {
+  -ms-flex-preferred-size: 87%;
+      flex-basis: 87%;
+}
+
+.footer__item-desc a {
+  font-size: 0.875rem;
+}
+
+.footer__categories {
+  padding-top: 4.3rem;
+  padding-bottom: 5rem;
+  font-size: 1rem;
+}
+
+.footer__categories > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__categories > * a:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.footer__categories-left {
+  padding-bottom: 3.4rem;
+}
+
+.footer__social, .footer__social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.625rem;
+}
+
+.footer__social-item, .footer__social-item-item {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 /*# sourceMappingURL=main.css.map */

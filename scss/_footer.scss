@@ -1,3 +1,69 @@
 .footer {
     background-color: $darkBlueFooterBackground;
+    padding: 0 1.5rem;
+    padding-top: 15rem;
+    padding-bottom: 2.5rem;
+    font-family: $openSans;
+
+    &__logo {
+        padding-left: 1rem;
+        padding-bottom: 2.5rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1rem;
+
+        & > * {
+            padding-bottom: 1rem;
+        }
+
+        &-icon {
+            padding-top: 0.2rem;
+            flex-basis: 13%;
+        }
+
+        &-desc {
+            flex-basis: 87%;
+
+            a {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    &__categories {
+        padding-top: 4.3rem;
+        padding-bottom: 5rem;
+        font-size: 1rem;
+
+        & > * {
+            display: flex;
+            flex-direction: column;
+
+            a:not(:last-child) {
+                padding-bottom: 1rem;
+            }
+        }
+
+        &-left {
+            padding-bottom: 3.4rem;
+        }
+    }
+
+    &__social, &__social-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.625rem;
+
+        &-item {
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            border: 1px solid $white;
+        }
+    }
+
 }

@@ -1,0 +1,47 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 0.875rem; // 18px
+    font-weight: 400;
+    font-family: $raleway;
+    color: $white;
+    line-height: 1.3rem;
+    
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    font-family: $raleway;
+    font-weight: 700;
+    border: none;
+    background: linear-gradient(to right, $cyan, $blue);
+    color: $white;
+}
+
+
+.attribution {
+    background: #fff;
+}
+
+
+// What HTML tag should use Testimonial Name and description

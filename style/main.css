@@ -349,13 +349,7 @@ button {
 
 .footer__item-icon {
   padding-top: 0.2rem;
-  -ms-flex-preferred-size: 13%;
-      flex-basis: 13%;
-}
-
-.footer__item-desc {
-  -ms-flex-preferred-size: 87%;
-      flex-basis: 87%;
+  min-width: 45px;
 }
 
 .footer__item-desc a {

@@ -21,11 +21,10 @@
 
         &-icon {
             padding-top: 0.2rem;
-            flex-basis: 13%;
+            min-width: 45px;
         }
 
         &-desc {
-            flex-basis: 87%;
 
             a {
                 font-size: 0.875rem;

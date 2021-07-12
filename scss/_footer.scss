@@ -66,3 +66,103 @@
     }
 
 }
+
+
+
+@media (min-width: 48rem) {
+    .footer {
+        padding: 12.5rem 7.5rem 6rem 7.5rem;
+        font-family: $openSans;
+
+        &__container {
+            display: grid; 
+            grid-template-columns: 1.5fr 1fr 1fr 0.5fr; 
+            grid-template-rows: 1fr;
+            gap: 3rem;
+        }
+
+        &__logo {
+            padding-left: 0;
+        }
+
+        &__categories {
+            display: flex;
+            padding: 0;
+            gap: 5rem;
+
+            & > * {
+                padding: 0;
+            }
+        }
+
+        &__social {
+            align-items: flex-start;
+            justify-content: flex-end
+        }
+
+        /*
+    
+        &__logo {
+            padding-left: 1rem;
+            padding-bottom: 2.5rem;
+        }
+    
+        &__item {
+            display: flex;
+            align-items: flex-start;
+            font-size: 1rem;
+    
+            & > * {
+                padding-bottom: 1rem;
+            }
+    
+            &-icon {
+                padding-top: 0.2rem;
+                min-width: 45px;
+            }
+    
+            &-desc {
+    
+                a {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    
+        &__categories {
+            padding-top: 4.3rem;
+            padding-bottom: 5rem;
+            font-size: 1rem;
+    
+            & > * {
+                display: flex;
+                flex-direction: column;
+    
+                a:not(:last-child) {
+                    padding-bottom: 1rem;
+                }
+            }
+    
+            &-left {
+                padding-bottom: 3.4rem;
+            }
+        }
+    
+        &__social, &__social-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.625rem;
+    
+            &-item {
+                width: 27px;
+                height: 27px;
+                border-radius: 50%;
+                border: 1px solid $white;
+            }
+        }
+
+        */
+    
+    }
+}

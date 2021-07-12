@@ -4,6 +4,7 @@
     padding-bottom: 2.9rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 0.8rem;
 
 
@@ -28,6 +29,30 @@
         a:hover {
             font-weight: 700;
             text-decoration: underline;
+        }
+    }
+}
+
+
+@media (min-width: 48rem) {
+    .header {
+        padding: 4.875rem 4.625rem;
+        font-size: 1rem;
+
+
+        &__logo {
+            
+            img {
+                width: 11.125rem;
+            }
+        }
+
+        &__menu {
+
+
+            & > *:not(:first-child) {
+                padding-left: 3.5rem;
+            }
         }
     }
 }

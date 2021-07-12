@@ -63,6 +63,18 @@ button:hover {
   font-size: 0.8rem;
 }
 
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header > * {
   width: 100%;
 }
@@ -92,6 +104,10 @@ button:hover {
   .header__logo img {
     width: 11.125rem;
   }
+  .header__container {
+    margin: 0 auto;
+    max-width: 90rem;
+  }
   .header__menu > *:not(:first-child) {
     padding-left: 3.5rem;
   }
@@ -113,9 +129,12 @@ button:hover {
   content: "";
   position: absolute;
   width: 100%;
-  height: 13rem;
+  height: 13.2rem;
   left: 0;
   background-color: #181f2a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
   bottom: 0;
 }
 
@@ -170,9 +189,19 @@ button:hover {
     padding-bottom: 10rem;
   }
   .hero::after {
-    display: none;
+    width: 100%;
+    height: 40rem;
+    background: url("/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    bottom: -11rem;
+    left: 0;
   }
   .hero .container {
+    max-width: 90rem;
+  }
+  .hero .container > * {
     max-width: 45rem;
   }
   .hero__text {
@@ -195,6 +224,7 @@ button:hover {
 }
 
 .main {
+  z-index: 1;
   position: relative;
   padding-top: 8rem;
   background-color: #181f2a;
@@ -437,17 +467,11 @@ button:hover {
 @media (min-width: 48rem) {
   .main {
     padding: 0.875rem 0;
-    /*
-        &::before {
-            z-index: 1;
-            border: 3px solid red;
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 20%;
-            background-image: url(/images/bg-curvy-desktop.svg);
-            top: -25.5rem;
-        } */
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+  .main__container {
+    background-color: #181f2a;
   }
   .main .features {
     display: -ms-grid;
@@ -460,8 +484,9 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 17.875rem;
+    max-width: 54.875rem;
     padding-bottom: 8.75rem;
+    margin: 0 auto;
   }
   .main .features > *:not(:last-child) {
     padding-bottom: 0;
@@ -662,73 +687,15 @@ button:hover {
 
 @media (min-width: 48rem) {
   .footer {
-    padding: 12.5rem 7.5rem 6rem 7.5rem;
+    padding: 12.5rem 1rem 6rem 1rem;
     font-family: "Open Sans", sans-serif;
-    /*
-    
-        &__logo {
-            padding-left: 1rem;
-            padding-bottom: 2.5rem;
-        }
-    
-        &__item {
-            display: flex;
-            align-items: flex-start;
-            font-size: 1rem;
-    
-            & > * {
-                padding-bottom: 1rem;
-            }
-    
-            &-icon {
-                padding-top: 0.2rem;
-                min-width: 45px;
-            }
-    
-            &-desc {
-    
-                a {
-                    font-size: 0.875rem;
-                }
-            }
-        }
-    
-        &__categories {
-            padding-top: 4.3rem;
-            padding-bottom: 5rem;
-            font-size: 1rem;
-    
-            & > * {
-                display: flex;
-                flex-direction: column;
-    
-                a:not(:last-child) {
-                    padding-bottom: 1rem;
-                }
-            }
-    
-            &-left {
-                padding-bottom: 3.4rem;
-            }
-        }
-    
-        &__social, &__social-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.625rem;
-    
-            &-item {
-                width: 27px;
-                height: 27px;
-                border-radius: 50%;
-                border: 1px solid $white;
-            }
-        }
-
-        */
+    max-width: 77.5rem;
+    margin: 0 auto;
   }
   .footer__container {
+    background-color: #0b1523;
+  }
+  .footer__bottom {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1.5fr 1fr 1fr 0.5fr;

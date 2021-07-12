@@ -647,6 +647,11 @@ button:hover {
   font-size: 1rem;
 }
 
+.footer__categories a:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .footer__categories > * {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,6 +688,11 @@ button:hover {
   height: 27px;
   border-radius: 50%;
   border: 1px solid white;
+}
+
+.footer__social-item:hover, .footer__social-item-item:hover {
+  color: #65e2d9;
+  border: 1px solid #65e2d9;
 }
 
 @media (min-width: 48rem) {
